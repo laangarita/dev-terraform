@@ -8,21 +8,21 @@ resource "aws_instance" "example" {
   instance_type   = "t2.micro"
 }
 
-resource "aws_eip" "ip" {
-    vpc = true
-    instance = aws_instance.example.id
-}
+#resource "aws_eip" "ip" {
+#    vpc = true
+#    instance = aws_instance.example.id
+#}
 
-output "ip" {
-  value = aws_eip.ip.public_ip
-}
+#output "ip" {
+#  value = aws_eip.ip.public_ip
+#}
 
-terraform {
-  backend "remote" {
-    organization = "techlu"
+#terraform {
+#  backend "remote" {
+#    organization = "techlu"
 
-    workspaces {
-      name = "dev-terraform"
-    }
-  }
-}
+#    workspaces {
+#      name = "dev-terraform"
+#    }
+#  }
+#}
