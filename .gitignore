@@ -1,1 +1,2 @@
 api_token
+.terraform/providers/registry.terraform.io/hashicorp/aws/*
