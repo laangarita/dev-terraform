@@ -17,12 +17,12 @@ output "ip" {
   value = aws_eip.ip.public_ip
 }
 
-#terraform {
-#  backend "remote" {
-#    organization = "techlu"
+terraform {
+  backend "remote" {
+    organization = "techlu"
 
-#    workspaces {
-#      name = "dev-terraform"
-#    }
-#  }
-#}
+    workspaces {
+      name = "dev-terraform"
+    }
+  }
+}
